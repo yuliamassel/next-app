@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Button from "../components/Button";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Input from "../components/Input";
 import styles from "../styles/auth.module.css";
 import { axiosInstance } from "./api/axios";
@@ -90,7 +90,7 @@ const SignUp = () => {
                 <Input
                   className={styles["input-register"]}
                   type="password"
-                  name='password'
+                  name="password"
                   value={form.password}
                   onChange={handleChange}
                   placeholder="Enter your password"

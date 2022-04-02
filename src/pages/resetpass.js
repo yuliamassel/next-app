@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/auth.module.css";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 import Image from 'next/image'
 import Input from "../components/Input";
 import Button from "../components/Button";

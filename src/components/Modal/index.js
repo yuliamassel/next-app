@@ -18,12 +18,10 @@ const Modal=({closeModal, children}) =>{
       
         useEffect(() => {
           setIsBrowser(true);
-    
-         // attach event listener to the whole windor with our handler
           window.addEventListener('click', backDropHandler);
     
-          // remove the event listener when the modal is closed
           return () => window.removeEventListener('click', backDropHandler);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         }, []);
       
       

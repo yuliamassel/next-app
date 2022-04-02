@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import Navbar from "../components/Navbar";
 import styles from "../styles/main.module.css";
 import Link from "next/link";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 // import {BsBookmark} from 'react-icons/bs'
 import * as BsIcons from "react-icons/bs";
 

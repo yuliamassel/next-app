@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Button from "../components/Button";
-import Footer from "../components/footer";
+import Footer from "../components/Footer/index";
 import Input from "../components/Input";
 import styles from "../styles/auth.module.css";
 import authLogin from "./api/auth";
@@ -42,15 +42,25 @@ const Login = () => {
   //   }
   // };
 
-  const handleLogin=()=>{
-    authLogin(form)
-    .then((res)=>{
-      alert(`halo ${res.email}`)
-      router.push('/')
-    })
-    .catch((err)=>{
-      console.log('ada error',err);
-    })
+  const handleLogin=(e)=>{
+    e.preventDefault()
+    return new Promise((resolve, reject) => {
+      axios
+        .post("http://localhost:4000/users/login", form)
+        .then((res) => {
+          if (typeof window !== "undefined") {
+            console.log('iniii',res.data)
+            localStorage.setItem("userInfo", JSON.stringify(res?.data?.data));
+            resolve(res?.data?.data);
+            router.push("/");
+            // window.localStorage.setItem(key, JSON.stringify(value));
+          }
+        })
+        .catch((err) => {
+          reject(err.response);
+          console.log(err);
+        });
+    });
   }
 
   const handleClick = (e) => {
@@ -91,7 +101,7 @@ const Login = () => {
                 placeholder="Enter your password"
               />
               </div>
-              <Button onClick={()=>handleLogin()} className={`mt-5 mb-4 fw-bold ${styles['btn-signup']}`}>Login</Button>
+              <Button onClick={(e)=>handleLogin(e)} className={`mt-5 mb-4 fw-bold ${styles['btn-signup']}`}>Login</Button>
               <p className={`text-center me-5 my-4 ${styles['txt-mid']}`}>Or login with</p>
               <div className={`my-5 ${styles['img-grup']}`}>
                 <div className="">

@@ -3,7 +3,7 @@ import styles from "../styles/main.module.css";
 import Navbar from "../components/Navbar";
 import * as BsIcons from "react-icons/fa";
 import Button from "../components/Button";
-import Footer from "../components/footer";
+import Footer from "../components/Footer/index";
 import { useState } from "react";
 import Link from "next/link";
 import Modal from "../components/Modal";
@@ -29,6 +29,7 @@ const Article = () => {
             or you can request to be an author if you <br /> have been a member for
             three months.
           </p>
+          <Button className={`${styles["btn-navtop"]}`}><Link href="/writeArticle"> Start Writing </Link></Button>
           </div>
         </div>
         <div className="ps-5 ms-4 mt-4">
