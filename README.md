@@ -4,10 +4,10 @@ News Today is a web application to read news around the world with various updat
 
 # Getting Started
     To running this app in local
-      - Clone this repo with ``` git clone https://github.com/yuliamassel/next-app.git  ```
-      - ``` npm install ``` to install all reqruired dependencies
-      - Create a ``` .env ``` file 
-      - ``` node index.js or npm start ``` to start the local server
+      - Clone this repo with git clone https://github.com/yuliamassel/next-app.git  
+      - npm install to install all reqruired dependencies
+      - Create a .env  file 
+      -  node index.js or npm start to start the local server
 
   
 
@@ -38,16 +38,16 @@ News Today is a web application to read news around the world with various updat
 
 - Home
 
-![Home](http://localhost:3000/home_news-app.png)
+![Home](/home_news-app.png)
   
 - Login
 
-![Login](http://localhost:3000/login_news-app.png)
+![Login](/login_news-app.png)
 
 - Sign Up
 
-![Sign Up](http://localhost:3000/signup_news-app.png)
+![Sign Up](/signup_news-app.png)
 
 - Articles  
 
-![Articles](http://localhost:3000/article_news-app.png)
+![Articles](/article_news-app.png)
