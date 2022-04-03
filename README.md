@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# News Today
 
-## Getting Started
+News Today is a web application to read news around the world with various updated news categories. here users can also create news or articles after requesting to become an author. This is for API [News Today](https://github.com/yuliamassel/news_api) 
 
-First, run the development server:
+# Getting Started
+    To running this app in local
+      - Clone this repo with ``` git clone https://github.com/yuliamassel/next-app.git  ```
+      - ``` npm install ``` to install all reqruired dependencies
+      - Create a ``` .env ``` file 
+      - ``` node index.js or npm start ``` to start the local server
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Equipment
+    This project using with :
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+      - Next JS (Framework)
+      - SWR & Axios
+      - Bootstrap v5
+      - React Bootstrap
+      - React Icon
+      - Socket Io
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Feature
+- **Login**, if you already have an account.
+- **Sign Up**, if you need to create an account.
+- **Reset Password**, if you already have an account but forgot the password.
+- **Home**, you can check & see many most popular news or articles and other activities in this app.
+- **Article**, You can write you article if you make request to be author
+- **Category**, you can looking at news with category 
+- **My Article**, you can see the article that you created or post
+- **Write Article**, you can write your articles
+- **Profile**, you can customize or edit your profile.
+- **Chat**, you can send message to your family or your friends
+- **Notification**,  You can see your notification after making payment or chat
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Snippets
 
-## Learn More
+- Home
 
-To learn more about Next.js, take a look at the following resources:
+![Home](http://localhost:3000/home_news-app.png)
+  
+- Login
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Login](http://localhost:3000/login_news-app.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Sign Up
 
-## Deploy on Vercel
+![Sign Up](http://localhost:3000/signup_news-app.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Articles  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Articles](http://localhost:3000/article_news-app.png)
