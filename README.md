@@ -38,16 +38,16 @@ News Today is a web application to read news around the world with various updat
 
 - Home
 
-![Home](http://localhost:3000/home_news-app.png)
+![Home](public/home_news-app.png)
   
 - Login
 
-![Login](http://localhost:3000/login_news-app.png)
+![Login](public/login_news-app.png)
 
 - Sign Up
 
-![Sign Up](http://localhost:3000/signup_news-app.png)
+![Sign Up](public/signup_news-app.png)
 
 - Articles  
 
-![Articles](http://localhost:3000/article_news-app.png)
+![Articles](public/article_news-app.png)

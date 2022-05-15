@@ -1,12 +1,25 @@
 import Head from "next/head";
 import styles from "../styles/main.module.css";
 import * as BsIcons from "react-icons/fa";
+import useSWR from "swr";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 const Profile = () => {
+  const token =
+    typeof window !== "undefined" &&
+    JSON.parse(localStorage.getItem("userInfo"));
+  const { data, error } = useSWR(
+    "http://localhost:4000/users/profile",
+    {
+      headers: { Authorization: `bearer : ${token}` },
+    },
+    fetcher
+  );
   return (
     <div className={styles.container}>
       <Head>
@@ -162,7 +175,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

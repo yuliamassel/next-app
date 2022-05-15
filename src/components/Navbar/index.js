@@ -30,7 +30,7 @@ const Navbar = () => {
     }if (e.target.innerText === "Login") {
       router.push("/login");
     }else{
-      router.push("/profile")
+      router.push("/EditProfile")
     }
   };
 
@@ -53,7 +53,7 @@ const Navbar = () => {
         <>
           <div>
             <BsIcons.BiSearch className={styles["icon-search"]} />
-            <Input className={styles["input-nav"]} />
+            <Input type="search" className={styles["input-nav"]} />
           </div>
           <BsIcons.BiBell className="mx-5" size={30} />
           <div>
